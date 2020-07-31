@@ -2,6 +2,7 @@
 #include <iostream>
 #include <string>
 using namespace std;
+
 //autodesk question 
 int binary_search ( int a[], int value, int right, int left) {
     while( right >= left ) {
@@ -12,12 +13,10 @@ int binary_search ( int a[], int value, int right, int left) {
         else
             left = middle +1;
     }
-
+    return -1;
 }
 
 int main(int argc, char *argv[], char *envp[] ){
-int a[] = {1,2,3,4,5,6};
-cout<<"hello world2";
-cout<<binary_search( a, 9, 0,5);
-    
+    int a[] = {1,2,3,4,5,6,7,8,9};
+    cout<<binary_search( a, 9, 8 ,0);    
 }
