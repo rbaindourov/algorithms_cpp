@@ -46,8 +46,8 @@ template <class Object> class Iterator{
         };
         const Object& retrieve() const{
             if(!isValid()) throw BadIterator();
-            return ( current->getElement() )
-        }
+            return ( current->getElement() );
+        };
     private:
         Node<Object>* current;
         Iterator ( Node<Object> *node ) : current( node ) {}
@@ -63,14 +63,14 @@ template <class Object> class List{
         ~List() {
             makeEmpty();
             delete head;
-        }
+        };
 
         bool isEmpty() const;
         void makeEmpty(){
             while( !isEmpty() ){
                 remove(first().retrieve());
             }
-        }
+        };
         Iterator<Object> zeroth() const {
             return Iterator<Object>( head );
         }
@@ -79,14 +79,14 @@ template <class Object> class List{
         const List operator = ( const List& rhs );
         void remove( const Object& data ){
 
-        }
+        };
         void insert( const Object& data ){
 
-        }
+        };
 
         void insert( const Object& data, Iterator<Object> iter ){
             
-        }
+        };
 
     private:
         Node<Object> *head;
