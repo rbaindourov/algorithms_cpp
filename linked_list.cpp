@@ -4,7 +4,6 @@
 #include <map>
 using namespace std;
 
-//come to me - kneel down for me - one more time - c++11
 template <class Object> class List;
 
 class BadIterator : public logic_error {
@@ -58,22 +57,29 @@ template <class Object> class Iterator{
 
 template <class Object> class List{
     public:
-        List();
+        List(){
+            head = new Node<Object>;
+        };
         List( const List& rhs );
         ~List() {
             makeEmpty();
             delete head;
         };
 
-        bool isEmpty() const;
+        bool isEmpty() const {
+            return ( head->nextIsNull() );
+        } 
         void makeEmpty(){
             while( !isEmpty() ){
                 remove(first().retrieve());
             }
         };
+        
+
         Iterator<Object> zeroth() const {
             return Iterator<Object>( head );
         }
+
         Iterator<Object> first() const;
         Iterator<Object> findPrevious( const Object& data ) const;
         const List operator = ( const List& rhs );
@@ -81,11 +87,16 @@ template <class Object> class List{
 
         };
         void insert( const Object& data ){
+            Node<Object>* newnode = new Node<Object>( data, , head->getNext() );
+            head->setNext(newnode );
 
         };
 
         void insert( const Object& data, Iterator<Object> iter ){
-            
+
+
+
+
         };
 
     private:
@@ -100,7 +111,8 @@ int main()
 {
 
 
-    
+    List<string> llstr = new List();
+
     vector<string> msg {"Hello", "C++", "World", "from", "VS Code", "and the C++ extension!"};
 
     for (const string& word : msg)
