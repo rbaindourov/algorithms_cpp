@@ -1,31 +1,9 @@
 {
-    "version": "2.0.0",
-    "tasks": [      
+    "tasks": [
         {
             "type": "shell",
-            "label": "C/C++: gcc build active file",
-            "command": "/usr/bin/gcc",
-            "args": [
-                "-g",
-                "${file}",
-                "-o",
-                "${fileDirname}/${fileBasenameNoExtension}"
-            ],
-            "options": {
-                "cwd": "${workspaceFolder}"
-            },
-            "problemMatcher": [
-                "$gcc"
-            ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            }
-        },
-        {
-            "type": "shell",
-            "label": "C/C++: cpp build active file",
-            "command": "/usr/bin/cpp",
+            "label": "C/C++: g++ build active file",
+            "command": "/usr/bin/g++",
             "args": [
                 "-g",
                 "${file}",
@@ -43,5 +21,6 @@
                 "isDefault": true
             }
         }
-    ]
-} 
+    ],
+    "version": "2.0.0"
+}
