@@ -16,8 +16,7 @@ answer sum_exists (vector<int> a, int sum ) {
      struct answer indexes = {-1,-1};
      map<int,int> m;
           
-     for ( int i =0; i<a.size(); i++ ) {
-         cout<<a[i]<<endl;
+     for ( int i =0; i<a.size(); i++ ) {         
          int value = sum - a[i];
 
          if( m.find(a[i]) != m.end() ){             
@@ -33,8 +32,8 @@ answer sum_exists (vector<int> a, int sum ) {
 }
 //O(n)
 int main(int argc, char *argv[], char *envp[] ){
-    vector<int> a {1,2,3,4,5,6,7,8,9};
-    struct answer result = sum_exists( a, 9);    
+    vector<int> a {1,2,3,4,6,7,8,9,5};
+    struct answer result = sum_exists( a, 9 );    
     cout << result.a<< "  " << result.b<<endl;
-    cout << a[result.a] + a[result.b];
+    cout << a[result.a] + a[result.b]<< endl;
 }
