@@ -1,7 +1,6 @@
 #include <iostream>
 #include <vector>
 #include <string>
-#include <map>
 using namespace std;
 
 template <class Object> class List;
@@ -89,7 +88,7 @@ template <class Object> class List{
         };
         void insert( const Object& data ){
             Node<Object>* newnode = new Node<Object>( data, head->getNext() );
-            head->setNext(newnode );
+            head->setNext( newnode );
 
         };
 
