@@ -4,6 +4,9 @@
 #include <map>
 using namespace std;
 
+//this was an actual question from etrade 
+//i dont think they wanted to hire, they just needed ideas. 
+
 template <class Object> class List;
 
 class BadIterator : public logic_error {
@@ -89,16 +92,10 @@ template <class Object> class List{
         };
         void insert( const Object& data ){
             Node<Object>* newnode = new Node<Object>( data, head->getNext() );
-            head->setNext(newnode );
-
+            head->setNext( newnode );
         };
 
-        void insert( const Object& data, Iterator<Object> iter ){
-
-
-
-
-        };
+        void insert( const Object& data, Iterator<Object> iter ){ };
 
     private:
         Node<Object> *head;
@@ -107,7 +104,7 @@ template <class Object> class List{
 };
 
 
-//we are one
+
 int main()
 {
     List<string>* llstr = new List<string>();
