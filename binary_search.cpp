@@ -3,8 +3,7 @@
 #include <string>
 using namespace std;
 
-//autodesk question 
-int binary_search ( int a[], int value, int right, int left) {
+int binary_search ( int a[], int value, int left, int right) {
     while( right >= left ) {
         int middle = (left+right)/2;
         if( value == a[middle] ) return middle;
@@ -18,5 +17,5 @@ int binary_search ( int a[], int value, int right, int left) {
 
 int main(int argc, char *argv[], char *envp[] ){
     int a[] = {1,2,3,4,5,6,7,8,9};
-    cout<<binary_search( a, 9, 8 ,0);    
+    cout<<binary_search( a, 9, 0,8);    
 }
