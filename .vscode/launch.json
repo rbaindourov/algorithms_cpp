@@ -2,6 +2,41 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "type": "java",
+      "name": "SearchInsertionPoint",
+      "request": "launch",
+      "mainClass": "SearchInsertionPoint",
+      "projectName": "algorithms_cpp_e97b1a9a"
+    },
+    {
+      "type": "java",
+      "name": "RemoveDuplicatesFromArray",
+      "request": "launch",
+      "mainClass": "RemoveDuplicatesFromArray",
+      "projectName": "algorithms_cpp_e97b1a9a"
+    },
+    {
+      "type": "java",
+      "name": "RomanNumerals",
+      "request": "launch",
+      "mainClass": "RomanNumerals",
+      "projectName": "algorithms_cpp_e97b1a9a"
+    },
+    {
+      "type": "java",
+      "name": "romanNumerals",
+      "request": "launch",
+      "mainClass": "romanNumerals",
+      "projectName": "algorithms_cpp_e97b1a9a"
+    },
+    {
+      "type": "java",
+      "name": "Main",
+      "request": "launch",
+      "mainClass": "Main",
+      "projectName": "algorithms_cpp_e97b1a9a"
+    },
+    {
       "name": "g++ - Build and debug active file",
       "type": "cppdbg",
       "request": "launch",
