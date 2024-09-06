@@ -40,9 +40,15 @@ s consists of parentheses only '()[]{}'. */
 
 import java.util.Stack;
 import java.util.HashMap;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.HashSet;
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Set;
 
 class ValidParenthesis {
-    public boolean isValid(String s) {
+    public boolean isValidParanthesis(String s) {
         Stack<Character> stack = new Stack<>();
         HashMap<Character, Character> map = new HashMap<>();
         map.put('(', ')');
@@ -60,6 +66,53 @@ class ValidParenthesis {
         }
         return stack.isEmpty();
     }
+
+    public List<String> removeInvalidParentheses(String s) {
+        List<String> result = new ArrayList<>();
+        if (s == null) return result;
+
+        Set<String> visited = new HashSet<>();
+        Queue<String> queue = new LinkedList<>();
+
+        queue.add(s);
+        visited.add(s);
+
+        boolean found = false;
+
+        while (!queue.isEmpty()) {
+            String str = queue.poll();
+
+            if (isValid(str)) {
+                result.add(str);
+                found = true;
+            }
+
+            if (found) continue;
+
+            for (int i = 0; i < str.length(); i++) {
+                if (str.charAt(i) != '(' && str.charAt(i) != ')') continue;
+
+                String newStr = str.substring(0, i) + str.substring(i + 1);
+                if (!visited.contains(newStr)) {
+                    queue.add(newStr);
+                    visited.add(newStr);
+                }
+            }
+        }
+
+        return result;
+    }
+
+    private boolean isValid(String s) {
+        int count = 0;
+        for (char c : s.toCharArray()) {
+            if (c == '(') count++;
+            if (c == ')') count--;
+            if (count < 0) return false;
+        }
+        return count == 0;
+    }
+    
     //generate test cases
     public static void main(String[] args) {
         ValidParenthesis vp = new ValidParenthesis();
@@ -68,6 +121,12 @@ class ValidParenthesis {
         System.out.println(vp.isValid("(]")); //false
         System.out.println(vp.isValid("([)]")); //false
         System.out.println(vp.isValid("{[]}")); //true
+
+        System.out.println(vp.removeInvalidParentheses("(])")); //true
+        System.out.println(vp.removeInvalidParentheses("([])[]{}")); //true
+        System.out.println(vp.removeInvalidParentheses("(]")); //false
+        System.out.println(vp.removeInvalidParentheses("([)]")); //false
+        System.out.println(vp.removeInvalidParentheses("{[]}")); //true
     }
 }
 
