@@ -97,6 +97,8 @@ s consists of lowercase English letters.
         System.out.println(strStr("sadbutsad", "sad")); // 0
         System.out.println(strStr("leetcode", "leeto")); // -1
         //generate test cases for repeatedSubstring
-        
+        System.out.println(repeatedSubstringPattern("abab")); // true
+        System.out.println(repeatedSubstringPattern("aba")); // false
+        System.out.println(repeatedSubstringPattern("abcabcabcabc")); // true
     }
 }
