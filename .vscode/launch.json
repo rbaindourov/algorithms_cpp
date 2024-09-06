@@ -3,6 +3,48 @@
   "configurations": [
     {
       "type": "java",
+      "name": "RemoveElementsFromList",
+      "request": "launch",
+      "mainClass": "RemoveElementsFromList",
+      "projectName": "algorithms_cpp_e97b1a9a"
+    },
+    {
+      "type": "java",
+      "name": "NArrayTree",
+      "request": "launch",
+      "mainClass": "NArrayTree",
+      "projectName": "algorithms_cpp_e97b1a9a"
+    },
+    {
+      "type": "java",
+      "name": "BSTIterator",
+      "request": "launch",
+      "mainClass": "BSTIterator",
+      "projectName": "algorithms_cpp_e97b1a9a"
+    },
+    {
+      "type": "java",
+      "name": "PreOrderTreeTraversal",
+      "request": "launch",
+      "mainClass": "PreOrderTreeTraversal",
+      "projectName": "algorithms_cpp_e97b1a9a"
+    },
+    {
+      "type": "java",
+      "name": "MedianOfTwoSortedArrays",
+      "request": "launch",
+      "mainClass": "MedianOfTwoSortedArrays",
+      "projectName": "algorithms_cpp_e97b1a9a"
+    },
+    {
+      "type": "java",
+      "name": "SubstringWithConcatenatedWords",
+      "request": "launch",
+      "mainClass": "SubstringWithConcatenatedWords",
+      "projectName": "algorithms_cpp_e97b1a9a"
+    },
+    {
+      "type": "java",
       "name": "SearchInsertionPoint",
       "request": "launch",
       "mainClass": "SearchInsertionPoint",
