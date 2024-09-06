@@ -3,6 +3,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "ListNodeSolution",
+      "request": "launch",
+      "mainClass": "ListNodeSolution",
+      "projectName": "algorithms_cpp_e97b1a9a"
+    },
+    {
+      "type": "java",
+      "name": "ValidParenthesis",
+      "request": "launch",
+      "mainClass": "ValidParenthesis",
+      "projectName": "algorithms_cpp_e97b1a9a"
+    },
+    {
+      "type": "java",
       "name": "RemoveElementsFromList",
       "request": "launch",
       "mainClass": "RemoveElementsFromList",
