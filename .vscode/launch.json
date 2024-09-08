@@ -3,6 +3,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "ConstructFromPrePost",
+      "request": "launch",
+      "mainClass": "ConstructFromPrePost",
+      "projectName": "algorithms_cpp_e97b1a9a"
+    },
+    {
+      "type": "java",
+      "name": "MinimumTimeCollectAllApplesTree",
+      "request": "launch",
+      "mainClass": "MinimumTimeCollectAllApplesTree",
+      "projectName": "algorithms_cpp_e97b1a9a"
+    },
+    {
+      "type": "java",
+      "name": "LinkedListBinaryTree",
+      "request": "launch",
+      "mainClass": "LinkedListBinaryTree",
+      "projectName": "algorithms_cpp_e97b1a9a"
+    },
+    {
+      "type": "java",
       "name": "ListNodeSolution",
       "request": "launch",
       "mainClass": "ListNodeSolution",
