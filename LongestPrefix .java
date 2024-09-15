@@ -26,11 +26,22 @@ class LongestPrefix {
 
         String maxPrefix = strs[0];
 
-        for( i = 1; i < strs.length; i++){
+        for( int i = 1; i < strs.length; i++){
 
+            String currentString = strs[i];
+
+            for(int j = 0; j < maxPrefix.length(); j++){
+
+                if(j >= currentString.length() || maxPrefix.charAt(j) != currentString.charAt(j)){
+
+                    maxPrefix = maxPrefix.substring(0, j);
+                    break;
+                }
+            }
             
         }
 
+        return maxPrefix;
 
     }
 }

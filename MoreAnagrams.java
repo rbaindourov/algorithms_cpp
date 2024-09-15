@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Solution {
+class MoreAnagrams {
     // Method to return a unique character signature for each string.
     static String sortCharacters(String input) {
         char[] chars = input.toCharArray();
