@@ -3,86 +3,30 @@
   "configurations": [
     {
       "type": "java",
-      "name": "ConstructFromPrePost",
+      "name": "VowelSubstring",
       "request": "launch",
-      "mainClass": "ConstructFromPrePost",
+      "mainClass": "VowelSubstring",
       "projectName": "algorithms_cpp_e97b1a9a"
     },
     {
       "type": "java",
-      "name": "MinimumTimeCollectAllApplesTree",
+      "name": "RepeatedCharacter",
       "request": "launch",
-      "mainClass": "MinimumTimeCollectAllApplesTree",
+      "mainClass": "RepeatedCharacter",
       "projectName": "algorithms_cpp_e97b1a9a"
     },
     {
       "type": "java",
-      "name": "LinkedListBinaryTree",
+      "name": "FirstUniqCharacter",
       "request": "launch",
-      "mainClass": "LinkedListBinaryTree",
+      "mainClass": "FirstUniqCharacter",
       "projectName": "algorithms_cpp_e97b1a9a"
     },
     {
       "type": "java",
-      "name": "ListNodeSolution",
+      "name": "Solution",
       "request": "launch",
-      "mainClass": "ListNodeSolution",
-      "projectName": "algorithms_cpp_e97b1a9a"
-    },
-    {
-      "type": "java",
-      "name": "ValidParenthesis",
-      "request": "launch",
-      "mainClass": "ValidParenthesis",
-      "projectName": "algorithms_cpp_e97b1a9a"
-    },
-    {
-      "type": "java",
-      "name": "RemoveElementsFromList",
-      "request": "launch",
-      "mainClass": "RemoveElementsFromList",
-      "projectName": "algorithms_cpp_e97b1a9a"
-    },
-    {
-      "type": "java",
-      "name": "NArrayTree",
-      "request": "launch",
-      "mainClass": "NArrayTree",
-      "projectName": "algorithms_cpp_e97b1a9a"
-    },
-    {
-      "type": "java",
-      "name": "BSTIterator",
-      "request": "launch",
-      "mainClass": "BSTIterator",
-      "projectName": "algorithms_cpp_e97b1a9a"
-    },
-    {
-      "type": "java",
-      "name": "PreOrderTreeTraversal",
-      "request": "launch",
-      "mainClass": "PreOrderTreeTraversal",
-      "projectName": "algorithms_cpp_e97b1a9a"
-    },
-    {
-      "type": "java",
-      "name": "MedianOfTwoSortedArrays",
-      "request": "launch",
-      "mainClass": "MedianOfTwoSortedArrays",
-      "projectName": "algorithms_cpp_e97b1a9a"
-    },
-    {
-      "type": "java",
-      "name": "SubstringWithConcatenatedWords",
-      "request": "launch",
-      "mainClass": "SubstringWithConcatenatedWords",
-      "projectName": "algorithms_cpp_e97b1a9a"
-    },
-    {
-      "type": "java",
-      "name": "SearchInsertionPoint",
-      "request": "launch",
-      "mainClass": "SearchInsertionPoint",
+      "mainClass": "Solution",
       "projectName": "algorithms_cpp_e97b1a9a"
     },
     {
@@ -91,48 +35,6 @@
       "request": "launch",
       "mainClass": "RemoveDuplicatesFromArray",
       "projectName": "algorithms_cpp_e97b1a9a"
-    },
-    {
-      "type": "java",
-      "name": "RomanNumerals",
-      "request": "launch",
-      "mainClass": "RomanNumerals",
-      "projectName": "algorithms_cpp_e97b1a9a"
-    },
-    {
-      "type": "java",
-      "name": "romanNumerals",
-      "request": "launch",
-      "mainClass": "romanNumerals",
-      "projectName": "algorithms_cpp_e97b1a9a"
-    },
-    {
-      "type": "java",
-      "name": "Main",
-      "request": "launch",
-      "mainClass": "Main",
-      "projectName": "algorithms_cpp_e97b1a9a"
-    },
-    {
-      "name": "g++ - Build and debug active file",
-      "type": "cppdbg",
-      "request": "launch",
-      "program": "${fileDirname}/${fileBasenameNoExtension}",
-      "args": [],
-      "stopAtEntry": false,
-      "cwd": "${workspaceFolder}",
-      "environment": [],
-      "externalConsole": false,
-      "MIMode": "gdb",
-      "setupCommands": [
-        {
-          "description": "Enable pretty-printing for gdb",
-          "text": "-enable-pretty-printing",
-          "ignoreFailures": true
-        }
-      ],
-      "preLaunchTask": "C/C++: g++ build active file",
-      "miDebuggerPath": "/usr/bin/gdb"
     },
     {
       "name": "C/C++ Runner: Debug Session",
