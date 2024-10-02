@@ -16,8 +16,7 @@ class WordPattern {
             if(mp.containsKey(c) && !mp.get(c).equals(words[index]) ) return false;
             else mp.put(c, words[index]);
 
-            if(mp2.containsKey(words[index]) && mp2.get(words[index]) != c ) return false;
-            else mp2.put( words[index], c);
+           
 
 
             index++;

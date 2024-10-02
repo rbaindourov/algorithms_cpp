@@ -3,6 +3,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "NextGreaterElement",
+      "request": "launch",
+      "mainClass": "NextGreaterElement",
+      "projectName": "algorithms_cpp_e97b1a9a"
+    },
+    {
+      "type": "java",
+      "name": "FloodFill",
+      "request": "launch",
+      "mainClass": "FloodFill",
+      "projectName": "algorithms_cpp_e97b1a9a"
+    },
+    {
+      "type": "java",
+      "name": "Cookies",
+      "request": "launch",
+      "mainClass": "Cookies",
+      "projectName": "algorithms_cpp_e97b1a9a"
+    },
+    {
+      "type": "java",
       "name": "VowelSubstring",
       "request": "launch",
       "mainClass": "VowelSubstring",
@@ -35,6 +56,24 @@
       "request": "launch",
       "mainClass": "RemoveDuplicatesFromArray",
       "projectName": "algorithms_cpp_e97b1a9a"
+    },
+    {
+      "name": "Debug active file",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${fileDirname}/${fileBasenameNoExtension}",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${fileDirname}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "setupCommands": [],
+      "preLaunchTask": "build active file",
+      "miDebuggerPath": "/usr/bin/gdb",
+      "logging": {
+        "engineLogging": true
+      }
     },
     {
       "name": "C/C++ Runner: Debug Session",
