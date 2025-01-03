@@ -3,6 +3,41 @@
   "configurations": [
     {
       "type": "java",
+      "name": "PrefixSum",
+      "request": "launch",
+      "mainClass": "PrefixSum",
+      "projectName": "algorithms_cpp_e97b1a9a"
+    },
+    {
+      "type": "java",
+      "name": "SumSubarray",
+      "request": "launch",
+      "mainClass": "SumSubarray",
+      "projectName": "algorithms_cpp_e97b1a9a"
+    },
+    {
+      "type": "java",
+      "name": "FindPositive",
+      "request": "launch",
+      "mainClass": "FindPositive",
+      "projectName": "algorithms_cpp_e97b1a9a"
+    },
+    {
+      "type": "java",
+      "name": "${fileBasenameNoExtension}",
+      "request": "launch",
+      "mainClass": "${fileBasenameNoExtension}",
+      "projectName": "algorithms_cpp_e97b1a9a"
+    },
+    {
+      "type": "java",
+      "name": "Fibannaci",
+      "request": "launch",
+      "mainClass": "Fibannaci",
+      "projectName": "algorithms_cpp_e97b1a9a"
+    },
+    {
+      "type": "java",
       "name": "NextGreaterElement",
       "request": "launch",
       "mainClass": "NextGreaterElement",
