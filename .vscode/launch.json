@@ -1,133 +1,93 @@
 {
-  "version": "0.2.0",
-  "configurations": [
-    {
-      "type": "java",
-      "name": "PrefixSum",
-      "request": "launch",
-      "mainClass": "PrefixSum",
-      "projectName": "algorithms_cpp_e97b1a9a"
-    },
-    {
-      "type": "java",
-      "name": "SumSubarray",
-      "request": "launch",
-      "mainClass": "SumSubarray",
-      "projectName": "algorithms_cpp_e97b1a9a"
-    },
-    {
-      "type": "java",
-      "name": "FindPositive",
-      "request": "launch",
-      "mainClass": "FindPositive",
-      "projectName": "algorithms_cpp_e97b1a9a"
-    },
-    {
-      "type": "java",
-      "name": "${fileBasenameNoExtension}",
-      "request": "launch",
-      "mainClass": "${fileBasenameNoExtension}",
-      "projectName": "algorithms_cpp_e97b1a9a"
-    },
-    {
-      "type": "java",
-      "name": "Fibannaci",
-      "request": "launch",
-      "mainClass": "Fibannaci",
-      "projectName": "algorithms_cpp_e97b1a9a"
-    },
-    {
-      "type": "java",
-      "name": "NextGreaterElement",
-      "request": "launch",
-      "mainClass": "NextGreaterElement",
-      "projectName": "algorithms_cpp_e97b1a9a"
-    },
-    {
-      "type": "java",
-      "name": "FloodFill",
-      "request": "launch",
-      "mainClass": "FloodFill",
-      "projectName": "algorithms_cpp_e97b1a9a"
-    },
-    {
-      "type": "java",
-      "name": "Cookies",
-      "request": "launch",
-      "mainClass": "Cookies",
-      "projectName": "algorithms_cpp_e97b1a9a"
-    },
-    {
-      "type": "java",
-      "name": "VowelSubstring",
-      "request": "launch",
-      "mainClass": "VowelSubstring",
-      "projectName": "algorithms_cpp_e97b1a9a"
-    },
-    {
-      "type": "java",
-      "name": "RepeatedCharacter",
-      "request": "launch",
-      "mainClass": "RepeatedCharacter",
-      "projectName": "algorithms_cpp_e97b1a9a"
-    },
-    {
-      "type": "java",
-      "name": "FirstUniqCharacter",
-      "request": "launch",
-      "mainClass": "FirstUniqCharacter",
-      "projectName": "algorithms_cpp_e97b1a9a"
-    },
-    {
-      "type": "java",
-      "name": "Solution",
-      "request": "launch",
-      "mainClass": "Solution",
-      "projectName": "algorithms_cpp_e97b1a9a"
-    },
-    {
-      "type": "java",
-      "name": "RemoveDuplicatesFromArray",
-      "request": "launch",
-      "mainClass": "RemoveDuplicatesFromArray",
-      "projectName": "algorithms_cpp_e97b1a9a"
-    },
-    {
-      "name": "Debug active file",
-      "type": "cppdbg",
-      "request": "launch",
-      "program": "${fileDirname}/${fileBasenameNoExtension}",
-      "args": [],
-      "stopAtEntry": false,
-      "cwd": "${fileDirname}",
-      "environment": [],
-      "externalConsole": false,
-      "MIMode": "gdb",
-      "setupCommands": [],
-      "preLaunchTask": "build active file",
-      "miDebuggerPath": "/usr/bin/gdb",
-      "logging": {
-        "engineLogging": true
-      }
-    },
-    {
-      "name": "C/C++ Runner: Debug Session",
-      "type": "cppdbg",
-      "request": "launch",
-      "args": [],
-      "stopAtEntry": false,
-      "externalConsole": false,
-      "cwd": "/home/robert/Documents/projects/algorithms_cpp",
-      "program": "/home/robert/Documents/projects/algorithms_cpp/build/Debug/outDebug",
-      "MIMode": "gdb",
-      "miDebuggerPath": "gdb",
-      "setupCommands": [
+    "version": "0.2.0",
+    "configurations": [
         {
-          "description": "Enable pretty-printing for gdb",
-          "text": "-enable-pretty-printing",
-          "ignoreFailures": true
+            "name": "Debug active file",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}/${fileBasenameNoExtension}",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "preLaunchTask": "build active file",
+            "miDebuggerPath": "/usr/bin/gdb",
+            "logging": {
+                "engineLogging": true
+            },
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "text": "set output-radix 10"
+                }
+            ]
+        },
+        {
+            "name": "C/C++ Runner: Debug Session",
+            "type": "cppdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": false,
+            "externalConsole": false,
+            "cwd": "/home/robert/Documents/projects/algorithms_cpp",
+            "program": "/home/robert/Documents/projects/algorithms_cpp/build/Debug/outDebug",
+            "MIMode": "gdb",
+            "miDebuggerPath": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "text": "set output-radix 10"
+                }
+            ]
+        },
+        {
+            "name": "C/C++: g++-11 build and debug active file",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}/${fileBasenameNoExtension}",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set Disassembly Flavor to Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                },
+                {
+                  "text": "set output-radix 10"
+                } 
+            ],
+            "preLaunchTask": "C/C++: g++-11 build active file",
+            "miDebuggerPath": "/usr/bin/gdb"
         }
-      ]
-    }
-  ]
+    ],
+    "setupCommands": [
+        {
+            "description": "Enable pretty-printing for gdb",
+            "text": "-enable-pretty-printing",
+            "ignoreFailures": true
+        },
+        {
+            "text": "set output-radix 10"
+        }
+    ]
 }
